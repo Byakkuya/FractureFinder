@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Bone, Brain, Microscope } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import bone from "@/assets/bone.jpg";
 
 export default function Home() {
   return (
@@ -54,7 +55,7 @@ export default function Home() {
                       {/* X-ray Image with Analysis Overlay */}
                       <div className="relative w-full h-full">
                         <Image
-                          src="https://images.unsplash.com/photo-1582560475093-ba66accbc424?auto=format&fit=crop&w=800&q=80"
+                          src={bone}
                           alt="X-ray analysis with AI detection"
                           fill
                           className="object-cover rounded-lg"
@@ -131,7 +132,7 @@ export default function Home() {
       <footer className="bg-white border-t">
         <div className="container flex h-16 items-center px-4 mx-auto">
           <p className="text-sm text-emerald">
-            © 2024 FractureFinder. All rights reserved.
+            © 2025 FractureFinder. All rights reserved.
           </p>
         </div>
       </footer>
