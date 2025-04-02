@@ -15,6 +15,7 @@ export default function Home() {
           <div className="flex items-center space-x-2">
             <Bone className="h-6 w-6 text-ocean" />
             <span className="text-xl font-bold text-ocean">FractureFinder</span>
+            <span className="text-sm text-emerald">AI-Powered Bone Fracture Detection</span>
           </div>
           <div className="ml-auto">
             <Link href="/login">
