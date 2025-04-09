@@ -1,5 +1,5 @@
 "use client";
-
+import UploadScan from "@/components/UploadScan";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -121,19 +121,7 @@ export default function DashboardPage() {
                   </div>
                 </div>
                 <div className="border-2 border-dashed rounded-lg p-8 text-center">
-                  <div className="flex flex-col items-center space-y-4">
-                    <ImagePlus className="h-12 w-12 text-muted-foreground" />
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        Drag and drop your scan images here, or click to browse
-                      </p>
-                      <Input type="file" className="hidden" id="file-upload" />
-                      <Button>
-                        <Upload className="mr-2 h-4 w-4" />
-                        Upload Files
-                      </Button>
-                    </div>
-                  </div>
+                  <UploadScan />
                 </div>
               </CardContent>
             </Card>

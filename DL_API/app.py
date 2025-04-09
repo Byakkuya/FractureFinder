@@ -2,9 +2,14 @@ import os
 from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
 from predictions import predict  # Import the predict function from predictions.py
+from PIL import Image
+from tensorflow.keras.utils import load_img
+from flask_cors import CORS
+# Example usage
+
 
 app = Flask(__name__)
-
+CORS(app)
 # Configuration
 UPLOAD_FOLDER = 'static/uploads/'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
